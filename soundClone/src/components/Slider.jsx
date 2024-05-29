@@ -6,7 +6,7 @@ export default function SliderComp() {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    arrows: false,
+    arrows: true,
   };
   return (
     <div className="w-full  overflow-hidden p-12  flex items-center justify-center ">
@@ -16,10 +16,10 @@ export default function SliderComp() {
           <div className="item w-1/3 text-gray-600 flex flex-col items-center justify-center">
             {" "}
             <div className="w-full  flex flex-col items-center justify-center gap-10">
-              <div>Reviews</div>
+              <div className="text-4xl">Reviews</div>
               <div className="border-b border-gray-600 w-20 h-2"></div>
 
-              <div className="text-xl">
+              <div className="text-3xl w-1/3 text-center">
                 “I'm a testimonial. Click to edit me and add text that says
                 something nice about you and your services.”
               </div>
@@ -30,10 +30,10 @@ export default function SliderComp() {
           <div className="item w-1/3 text-gray-600 flex flex-col items-center justify-center">
             {" "}
             <div className="w-full  flex flex-col items-center justify-center gap-10">
-              <div>Reviews</div>
+              <div className="text-4xl">Reviews</div>
               <div className="border-b border-gray-600 w-20 h-2"></div>
 
-              <div className="text-xl">
+              <div className="text-3xl w-1/3 text-center">
                 “I'm a testimonial. Click to edit me and add text that says
                 something nice about you and your services.”
               </div>
@@ -44,10 +44,10 @@ export default function SliderComp() {
           <div className="item w-1/3l text-gray-600 flex flex-col items-center justify-center">
             {" "}
             <div className="w-full  flex flex-col items-center justify-center gap-10">
-              <div>Reviews</div>
+              <div className="text-5xl">Reviews</div>
               <div className="border-b border-gray-600 w-20 h-2"></div>
 
-              <div className="text-xl">
+              <div className="text-3xl w-1/3 text-center">
                 “I'm a testimonial. Click to edit me and add text that says
                 something nice about you and your services.”
               </div>

@@ -2,7 +2,7 @@ export default function AsFeaturedOn() {
   return (
     <div className="flex flex-col gap-3 items-center justify-center w-full">
       <div className="flex gap-3 items-center justify-around w-full">
-        <div>As Featured On:</div>
+        <div className="font-bold text-gray-800">As Featured On:</div>
         <div>
           <svg
             preserveAspectRatio="xMidYMid meet"
