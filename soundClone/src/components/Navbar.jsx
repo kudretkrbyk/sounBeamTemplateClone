@@ -1,9 +1,11 @@
+import React from "react";
 import { FaHeadphones } from "react-icons/fa";
 import { FaCircleUser } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { IoLogoTwitter } from "react-icons/io";
 import { LiaShoppingBagSolid } from "react-icons/lia";
+import { Link } from "react-scroll"; // react-scroll'den Link bileşenini ekleyin
 
 export default function Navbar() {
   return (
@@ -15,9 +17,37 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center justify-center gap-2">
-          <div className="hover:text-[#e3cbaa] duration-300">Home</div>
-          <div className="hover:text-[#e3cbaa] duration-300">Benefits</div>
-          <div className="hover:text-[#e3cbaa] duration-300">Reviews</div>
+          {/* Link bileşenleriyle bağlantıları tanımlayın */}
+          <Link
+            to="soundBeam"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="hover:text-[#e3cbaa] duration-300"
+          >
+            Home
+          </Link>
+          <Link
+            to="easyWireless"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="hover:text-[#e3cbaa] duration-300"
+          >
+            Benefits
+          </Link>
+          <Link
+            to="SliderComp"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="hover:text-[#e3cbaa] duration-300"
+          >
+            Reviews
+          </Link>
         </div>
       </div>
       <div className="flex items-center justify-end gap-4 w-full p-3">
