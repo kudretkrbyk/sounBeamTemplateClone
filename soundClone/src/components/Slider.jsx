@@ -9,7 +9,7 @@ export default function SliderComp() {
     arrows: true,
   };
   return (
-    <div className="w-full  overflow-hidden p-12  flex items-center justify-center ">
+    <div className="z-50 w-full  overflow-hidden p-12  flex items-center justify-center ">
       <div className=" flex flex-col  items-center justify-center w-full  ">
         <Slider {...sliderSettings1} className="w-full">
           {/* slider1*/}
